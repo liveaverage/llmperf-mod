@@ -65,7 +65,7 @@ class SageMakerClient(LLMClient):
         if is_messages_api:
             payload = {
                 "messages": message,
-                "model": os.environ.get("AWS_SAGEMAKER_EP_NAME") or model,
+                "model": os.environ.get("AWS_SAGEMAKER_EP_MODEL_NAME") or model,
                 **request_config.sampling_params,
                 "stream": True,
             }
