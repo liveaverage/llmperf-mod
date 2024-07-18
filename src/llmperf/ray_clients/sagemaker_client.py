@@ -47,7 +47,8 @@ class SageMakerClient(LLMClient):
 
         if is_jumpstart or is_messages_api:
             message = [
-                {"role": "system", "content": ""},
+                {"role": "user", "content": "Hello! How are you?"},
+                {"role": "assistant","content": "Hi! I am quite well, how can I help you today?"},
                 {"role": "user", "content": prompt},
             ]
         else:
