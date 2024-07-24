@@ -243,3 +243,8 @@ output/
 
 __pycache__
 **/__pycache__/
+
+results
+results_*
+*.json
+*.csv
